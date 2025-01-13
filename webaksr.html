@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akusara.Learn | Rangga Pagar Alam 230102112</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .carousel-item {
+            height: 100vh;
+            min-height: 300px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    
+        .carousel-item img {
+            object-fit: cover;
+            height: vh;
+            min-height: 300px;
+        }
+    
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            bottom: 20%;
+            max-width: 80%;
+            margin: 0 auto;
+            left: 10%;
+            right: 10%; 
+        }
+    
+        @media (max-width: 768px) {
+            .carousel-item {
+                height: 50vh;
+                min-height: 300px;
+            }
+    
+            .carousel-item img {
+                height: 50vh;
+                min-height: 300px;
+            }
+    
+            .carousel-caption {
+                padding: 10px;
+                bottom: 10%;
+            }
+    
+            .carousel-caption h2 {
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+    
+            .carousel-caption p {
+                font-size: 1rem;
+                margin-bottom: 0;
+            }
+        }
+    
+        @media (max-width: 576px) {
+            .carousel-caption h2 {
+                font-size: 1.2rem;
+            }
+    
+            .carousel-caption p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Akusara</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#informasi">Informasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kode">Source Kode</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-light" type="submit">Cari</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- beranda -->
+    <section id="home">
+        <style>
+            #heroCarousel .carousel-item {
+                position: relative;
+                height: 100vh;
+            }
+    
+            #heroCarousel .carousel-item img {
+                object-fit: cover;
+                height: 100%;
+                filter: brightness(70%);
+            }
+    
+            #heroCarousel .carousel-caption {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #fff;
+                text-align: center;
+                background: rgba(0, 0, 0, 0.5);
+                padding: 20px;
+                border-radius: 10px;
+                max-width: 600px;
+            }
+    
+            #heroCarousel .carousel-caption h2 {
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+    
+            #heroCarousel .carousel-caption p {
+                font-size: 1.2rem;
+                margin-top: 10px;
+            }
+    
+            #heroCarousel .carousel-indicators button {
+                background-color: #fff;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+            }
+    
+            #heroCarousel .carousel-control-prev-icon,
+            #heroCarousel .carousel-control-next-icon {
+                filter: invert(100%);
+            }
+    
+            @media (max-width: 768px) {
+                #heroCarousel .carousel-caption h2 {
+                    font-size: 1.8rem;
+                }
+    
+                #heroCarousel .carousel-caption p {
+                    font-size: 1rem;
+                }
+            }
+        </style>
+    
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pict/pic.jpg" class="d-block w-100" alt="pic">
+                    <div class="carousel-caption">
+                        <h2>Selamat Datang di Akusara.Learn</h2>
+                        <p>Belajar Coding dengan teknis yang menyenangankan dan menghibur</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pict/pics.jpg" class="d-block w-100" alt="pics">
+                    <div class="carousel-caption">
+                        <h2>Pengembangan Website</h2>
+                        <p>Pengetahuan tentang website bisa lebih terukur dan lebih kreativitas.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pict/picz.jpg" class="d-block w-100" alt="picz">
+                    <div class="carousel-caption">
+                        <h2>Join Sekarang</h2>
+                        <p>Ayo masuk Akusara.Learn agar lebih mengetahui lebih jauh tentang Programing.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    
+
+
+    <!-- informasi -->
+    <section id="informasi" class="py-5 bg-dark text-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Program <span style="color: aqua;">Kode</span></h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-secondary">
+                            <h5 class="card-title mb-0 text-center" style="color: aqua;">HTML</h5>
+                        </div>
+                        <div class="card-body text-center">
+                            <img src="pict/html.jpeg" class="img-fluid mb-3" alt="Multimedia" style="max-height: 200px;">
+                            <p class="card-text">Program HTML pembuatan sebuah Website yang dibekali fitur dan style.</p>
+                            <button class="btn btn-secondary" data-bs-toggle="HTML" data-bs-target="#HTML">
+                                <i class="bi bi-info-circle me-2"></i>Info Lengkap
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-secondary">
+                            <h5 class="card-title mb-0 text-center" style="color: aqua;">Java</h5>
+                        </div>
+                        <div class="card-body text-center">
+                            <img src="pict/js.jpeg" class="img-fluid mb-3" alt="Pemasaran" style="max-height: 200px;">
+                            <p class="card-text">Pemrograman tingkat tinggi yang berorientasi objek dan multiplatform. 
+                                digunakan untuk membuat aplikasi web.</p> 
+                            <button class="btn btn-secondary" data-bs-toggle="Java" data-bs-target="#JS">
+                                <i class="bi bi-info-circle me-2"></i>Info Lengkap
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-secondary">
+                            <h5 class="card-title mb-0 text-center" style="color: aqua;">Python</h5>
+                        </div>
+                        <div class="card-body text-center">
+                            <img src="pict/pyton.jpeg" class="img-fluid mb-3" alt="Jasa Boga" style="max-height: 200px;">
+                            <p class="card-text">Program yangdapat melakukan eksekusi sejumlah instruksi multi guna secara langsung (interpretatif) dengan metode orientasi objek</p>
+                            <button class="btn btn-secondary" data-bs-toggle="Python" data-bs-target="#PYHTON">
+                                <i class="bi bi-info-circle me-2"></i>Info Lengkap
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- source kode-->
+
+    <section id="kode" class="py-5 bg-dark text-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Source <span style="color: aqua;">Kode</span></h2>
+            <p class="text-center mb-4">Source kode yang bisa didapat apabila join Akuasara.Learn</p>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <img src="pict/html2.png" class="img-fluid mb-3" alt="HTML" style="max-height: 100px;">
+                        <h5 class="mt-3">HTML</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <img src="pict/java.png" class="img-fluid mb-3" alt="Java" style="max-height: 100px;">
+                        <h5 class="mt-3">Java</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <img src="pict/python.png" class="img-fluid mb-3" alt="Python" style="max-height: 100px;">
+                        <h5 class="mt-3">Python</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <img src="pict/css-3.png" class="img-fluid mb-3" alt="CSS" style="max-height: 100px;">
+                        <h5 class="mt-3">CSS</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    
+    <!-- kontak -->
+
+    <section id="kontak" class="py-5" style="background-color: #121212; color: #ffffff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <h2 class="mb-4 text-center" style="color: #ffffff;">Kontak <span style="color: aqua;">Kami</span></h2>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label" style="color: #ffffff;">Nama Lengkap</label>
+                            <input type="text" class="form-control" style="background-color: #333; color: #fff; border: 1px solid #444;">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" style="color: #ffffff;">Email</label>
+                            <input type="email" class="form-control" style="background-color: #333; color: #fff; border: 1px solid #444;">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" style="color: #ffffff;">Pesan</label>
+                            <textarea class="form-control" rows="4" style="background-color: #333; color: #fff; border: 1px solid #444;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="background-color: #444; border-color: #555;">
+                            <i class="bi bi-send me-2"></i>Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- FOOTER -->
+<footer class="bg-dark text-white py-4" style="background-color: #121212;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 style="color: #f8f9fa;">Akusara.Learn</h5>
+                <p style="color: #c8c8c8;">Membuka Peluang Tanpa Batas dengan Akusara.Learn</p>
+            </div>
+
+        </div>
+        <hr style="border-color: #444;">
+        <div class="text-center">
+            <p class="mb-0" style="color: #c8c8c8;">&copy; 2025 Akusara.Learn. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
